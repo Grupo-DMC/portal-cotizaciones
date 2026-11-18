@@ -1,0 +1,138 @@
+# ─── Secretos y entorno ──────────────────────────────────────────────
+# Solo .env.example (sin valores reales) se versiona.
+.env
+.env.*
+!.env.example
+*.local
+.envrc
+.direnv/
+
+# Claves, certificados y credenciales
+*.pem
+*.key
+*.crt
+*.cer
+*.csr
+*.der
+*.p12
+*.pfx
+*.jks
+*.keystore
+*.ppk
+id_rsa*
+id_ed25519*
+*.gpg
+secrets/
+.secrets/
+credentials*.json
+service-account*.json
+*-credentials.*
+*.token
+.npmrc
+.yarnrc.yml
+
+# ─── Bases de datos y datos reales ───────────────────────────────────
+*.mdf
+*.ldf
+*.ndf
+*.bak
+*.bacpac
+*.dacpac
+*.sqlite
+*.sqlite3
+*.db
+*.sql.gz
+dump*.sql
+backup*/
+# Exportaciones / respaldos de datos de clientes
+/data/
+/exports/
+/uploads/
+/storage/
+*.csv
+*.xls
+*.xlsx
+!docs/**/*.csv
+
+# PDFs generados y adjuntos locales (los PDF se generan en memoria)
+/public/uploads/
+/generated/
+/*.pdf
+
+# ─── Dependencias ────────────────────────────────────────────────────
+/node_modules
+node_modules/
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# ─── Build / Next.js ─────────────────────────────────────────────────
+/.next/
+/out/
+/build
+/dist
+next-env.d.ts
+*.tsbuildinfo
+
+# ─── Pruebas y cobertura ─────────────────────────────────────────────
+/coverage
+/.nyc_output
+/playwright-report/
+/test-results/
+/blob-report/
+
+# ─── Logs y volcados ─────────────────────────────────────────────────
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+lerna-debug.log*
+report.*.json
+core.*
+*.heapsnapshot
+
+# ─── Despliegue ──────────────────────────────────────────────────────
+.vercel
+.netlify
+.turbo
+.cache/
+.vscode-test/
+
+# ─── Editores y sistema operativo ────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+ehthumbs.db
+$RECYCLE.BIN/
+*.swp
+*.swo
+*~
+.idea/
+*.iml
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+*.code-workspace
+
+# ─── Herramientas de IA / sesiones locales ───────────────────────────
+.claude/settings.local.json
+.claude/projects/
+.taste-skill/
+.impeccable/
+.cursor/
+.aider*
+.continue/
+
+# ─── Temporales ──────────────────────────────────────────────────────
+tmp/
+temp/
+scratch/
+scripts/_tmp*
+*.tmp
+*.orig
+*.rej
